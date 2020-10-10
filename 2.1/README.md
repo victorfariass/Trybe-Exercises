@@ -1,0 +1,1 @@
+No dia 2.1 da Trybe aprendi a usar o Git no terminal, fazer um repositório remoto no GitHub e vincular ao meu repositório local. Aprendi os comandos "add" para adicionar uma nova atualização no meu repositório local, o "commit" e o "push" para subir as alterações feitas para meu repositório remoto no GitHub.
