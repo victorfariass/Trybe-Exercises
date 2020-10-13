@@ -1,0 +1,1 @@
+No dia 3.1 dos estudos na Trybe, começamos o bloco de HTML & CSS. Na aula aprendi sobre o que é o HTML e onde ela surgiu, e aprendi as primeiras tags da linguagem de marcação e como os elementos se relacionam, além de ver links internos e externos.
