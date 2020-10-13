@@ -1,0 +1,1 @@
+No dia 2.3 da Trybe, foi ensinado como funciona a Internet; Entendi o modelo Cliente & Servidor e consigo identificar suas partes; Compreendi  como funcionam os protocolos HTTP HTTPS e identificar quais os tipos de requisiçõe doem ser feitos a através desses protocolos.
