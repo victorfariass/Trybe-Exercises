@@ -7,25 +7,25 @@ A Trybe é uma escola para pessoas que querem construir uma carreira de sucesso 
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos doDesenvolvimento Web :white_check_mark:
+## Fundamentos doDesenvolvimento Web :hourglass_flowing_sand:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [:white_check_mark:] 1-3: _Unix & Bash - Part 1_
-- [:white_check_mark:] 1-4: _Unix & Bash - Part 2_
-- [:white_check_mark:] 1-5: _Shell Script_
+:white_check_mark: 1-3: _Unix & Bash - Part 1_
+:white_check_mark: 1-4: _Unix & Bash - Part 2_
+:white_check_mark: 1-5: _Shell Script_
 
 ##### Bloco 2: Git & GitHub
 
-- [:white_check_mark:] 2-1: _O que é e para que serve?_
-- [:white_check_mark:] 2-2: _Entendendo os comandos_
-- [:white_check_mark:] 2-3: _Internet - Entendendo como ela funciona_
+:white_check_mark: 2-1: _O que é e para que serve?_
+:white_check_mark: 2-2: _Entendendo os comandos_
+:white_check_mark: 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [:white_check_mark:] 3-1: _HTML & CSS - Estruturas de página_
-- [:white_check_mark:] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [:white_check_mark:] 3-3: _HTML & CSS - Seletores e posicionamento_
+:white_check_mark: 3-1: _HTML & CSS - Estruturas de página_
+:white_check_mark: 3-2: _HTML & CSS - Primeiros passos em CSS_
+:white_check_mark: 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
 - [ ] 3-5: _[Projeto - HTML & CSS]()_
 
