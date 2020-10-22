@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgba(24, 65, 24, 0.493);
+}
+
+.head {
+    padding: 50px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b5/Odontodactylus_scyllarus1.jpg);
+    background-size: 1600px;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.menu {
+    text-align: center;
+    background-color: rgb(194, 145, 110);
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.noticias {
+    margin: 10px 50px;
+}
+
+.titulo {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.sec-1 {
+    margin-top: 30px;
+}
+
+.sec-1 h2 {
+    text-align: left;
+}
+
+.sec-1 p {
+    margin-top: 20px;
+    width: 65%;
+    float: left;
+    text-align: justify;
+}
+
+.sec-1 img {
+    width: 25%;
+    margin: 0 30px 10px 30px;
+}
+
+.sec-2 div {
+    float: right;
+    width: 70%;
+
+}
+
+.sec-2 table {
+    border: 2px solid black;
+    width: 400px;
+}
+
+.sec-2 img {
+    width: 20%;
+}
+
+.sec-3 {
+    margin: 30px 0;
+}
+
+.sec-3 h2 {
+    text-align: left;
+}
+
+.sec-3 p {
+    margin: 30px 30px 0 0;
+    float: left;
+    width: 60%;
+    text-align: justify;
+}
+
+.sec-3 img {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.sec-4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    clear: both;
+    float: left;
+    width: 50%;
+}
+
+.sec-4 ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sec-4 a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+.sec-4 a:hover {
+    text-decoration: underline;
+}
+
+.not-2 {
+    background-color: rgb(194, 145, 110);
+    padding: 20px;
+    border: 3px ridge rgb(206, 60, 60);
+    border-radius: 15px;
+    float: right;
+    margin-right: 300px;
+}
+
+.not-2 a {
+    color: black;
+}
+
+.rodape h4{
+    clear: both;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(194, 145, 110);
+    padding: 20px;
+}
