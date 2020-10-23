@@ -1,4 +1,4 @@
-let a = 120
-let b = 40
+let a = 120;
+let b = 40;
 
-console.log(a - b)
+console.log(a - b);
