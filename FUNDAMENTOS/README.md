@@ -1,4 +1,4 @@
-## **FUNDAMENTOS DO DESENVOLVIMENTO WEB**
+## *FUNDAMENTOS DO DESENVOLVIMENTO WEB :hourglass_flowing_sand:*
 
 No primeiro módulo aprenderei tudo que preciso saber para iniciar a carreira no mundo do desenvolvimento Web, virando uma pessoa preparada para os módulos de Front-end e Back-end.
 
