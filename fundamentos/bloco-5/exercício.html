@@ -71,6 +71,21 @@
         }
         corrigeTitulo("Exercícios 5.1 - JavaSript")
 
+        function maiusculo() {
+          let texto = document.getElementsByTagName('p');
+          for (let i = 0; i < texto.length; i += 1) {
+            texto[i].style.textTransform = 'uppercase';
+          }
+        }
+        maiusculo();
+
+        function imprimirParagrafos(str) {
+          let paragrafo = document.getElementsByTagName(str);
+          for (let i = 0; i < paragrafo.length; i += 1) {
+            console.log(paragrafo[i]);
+          }
+        }
+        imprimirParagrafos('p')
     </script>
   </body>
 </html>
