@@ -61,10 +61,15 @@
         }
         mudarCorQuadradrosAmarelos(0, 'rgb(76,164,109)');
 
+        function mudarCorQuadradoVermelho(i, cor) {
+          document.getElementsByClassName ('center-content')[i].style.backgroundColor = cor;
+        }
+        mudarCorQuadradoVermelho(0, 'white')
         
-        
-        document.getElementsByClassName ('center-content')[0].style.backgroundColor = "white";
-        document.getElementsByClassName ('title')[0].innerHTML = "Exercício 5.1 - JavaScript"
+        function corrigeTitulo(titulo) {
+          document.getElementsByClassName ('title')[0].innerHTML = titulo;
+        }
+        corrigeTitulo("Exercícios 5.1 - JavaSript")
 
     </script>
   </body>
