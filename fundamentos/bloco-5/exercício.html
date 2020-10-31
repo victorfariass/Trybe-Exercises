@@ -44,7 +44,6 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
  Crie uma função que mude a cor do quadrado vermelho para branco.
  Crie uma função que corrija o texto da tag <h1>.
@@ -52,7 +51,21 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-        document.getElementsByTagName('p')[0].innerText = "Daqui a 2 anos espero já estar trabalhando fixo na área da tecnologia."
+        function mudarParagrafo(i, texto) {
+          document.getElementsByTagName('p')[i].innerText = texto;
+        }
+        mudarParagrafo(0, "Daqui a 2 anos espero estar trabalhando estável na área de texnologia");
+        
+        function mudarCorQuadradrosAmarelos(i, cor) {
+          document.getElementsByClassName('main-content')[i].style.backgroundColor = cor;
+        }
+        mudarCorQuadradrosAmarelos(0, 'rgb(76,164,109)');
+
+        
+        
+        document.getElementsByClassName ('center-content')[0].style.backgroundColor = "white";
+        document.getElementsByClassName ('title')[0].innerHTML = "Exercício 5.1 - JavaScript"
+
     </script>
   </body>
 </html>
