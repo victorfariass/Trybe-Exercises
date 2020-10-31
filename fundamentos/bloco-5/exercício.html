@@ -51,20 +51,20 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-        function mudarParagrafo(i, texto) {
-          document.getElementsByTagName('p')[i].innerText = texto;
+        function mudarParagrafo(texto) {
+          document.getElementsByTagName('p')[0].innerText = texto;
         }
-        mudarParagrafo(0, "Daqui a 2 anos espero estar trabalhando estável na área de texnologia");
+        mudarParagrafo("Daqui a 2 anos espero estar trabalhando estável na área de texnologia");
         
-        function mudarCorQuadradrosAmarelos(i, cor) {
-          document.getElementsByClassName('main-content')[i].style.backgroundColor = cor;
+        function mudarCorQuadradrosAmarelos(cor) {
+          document.getElementsByClassName('main-content')[0].style.backgroundColor = cor;
         }
-        mudarCorQuadradrosAmarelos(0, 'rgb(76,164,109)');
+        mudarCorQuadradrosAmarelos('rgb(76,164,109)');
 
-        function mudarCorQuadradoVermelho(i, cor) {
-          document.getElementsByClassName ('center-content')[i].style.backgroundColor = cor;
+        function mudarCorQuadradoVermelho(cor) {
+          document.getElementsByClassName ('center-content')[0].style.backgroundColor = cor;
         }
-        mudarCorQuadradoVermelho(0, 'white')
+        mudarCorQuadradoVermelho('white')
         
         function corrigeTitulo(titulo) {
           document.getElementsByClassName ('title')[0].innerHTML = titulo;
