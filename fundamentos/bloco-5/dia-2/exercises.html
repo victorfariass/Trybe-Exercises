@@ -62,22 +62,30 @@
       titulo.innerText = "Exercício 5.2 - JavaScript DOM";
       corpo.appendChild(titulo);
 
-      let div1 = document.createElement('div');
-      div1.className = "main-content";
-      corpo.appendChild(div1);
+      let divMain = document.createElement('div');
+      divMain.className = "main-content";
+      corpo.appendChild(divMain);
 
-      let div2 = document.createElement ('div');
-      div2.className = "center-content";
-      div1.appendChild(div2);
+      let divCenter = document.createElement ('div');
+      divCenter.className = "center-content";
+      divMain.appendChild(divCenter);
 
-      let paragrafo1 = document.createElement ('p');
-      paragrafo1.innerText = "Texto criado para o requisito 4 dos exercícios.";
-      div2.appendChild(paragrafo1);
+      let paragrafo = document.createElement ('p');
+      paragrafo.innerText = "Texto criado para o requisito 4 dos exercícios.";
+      divCenter.appendChild(paragrafo);
 
-      let div3 = document.createElement('div');
-      div3.className = "left-content";
-      div1.appendChild(div3);
+      let divLeft = document.createElement('div');
+      divLeft.className = "left-content";
+      divMain.appendChild(divLeft);
       
+      let divRight = document.createElement('div');
+      divRight.className = "right-content";
+      divMain.appendChild(divRight);
+
+      let image = document.createElement('img');
+      image.src = "https://picsum.photos/200";
+      image.className = "small-image";
+      divLeft.appendChild(image);
     </script>
   </body>
 </html>
