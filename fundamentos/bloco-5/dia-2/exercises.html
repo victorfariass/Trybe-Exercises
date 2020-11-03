@@ -57,36 +57,46 @@
   </head>
   <body>
     <script>
+      // Parte 1
+
+      // Exercício 1
       let corpo = document.querySelector('body');
       let titulo = document.createElement('h1');
       titulo.innerText = "Exercício 5.2 - JavaScript DOM";
       corpo.appendChild(titulo);
 
+      // Exercício 2
       let divMain = document.createElement('div');
       divMain.className = "main-content";
       corpo.appendChild(divMain);
 
+      // Exercício 3
       let divCenter = document.createElement ('div');
       divCenter.className = "center-content";
       divMain.appendChild(divCenter);
 
+      // Exercício 4
       let paragrafo = document.createElement ('p');
       paragrafo.innerText = "Texto criado para o requisito 4 dos exercícios.";
       divCenter.appendChild(paragrafo);
 
+      // Exercício 5
       let divLeft = document.createElement('div');
       divLeft.className = "left-content";
       divMain.appendChild(divLeft);
       
+      // Exercício 6
       let divRight = document.createElement('div');
       divRight.className = "right-content";
       divMain.appendChild(divRight);
 
+      // Exercício 7
       let image = document.createElement('img');
       image.src = "https://picsum.photos/200";
       image.className = "small-image";
       divLeft.appendChild(image);
 
+      // Exercício 8
       let lista = document.createElement('ul');
       for (let i = 1; i <= 10; i += 1) {
         let listaNum = document.createElement('li');
@@ -95,6 +105,7 @@
       }
       divRight.appendChild(lista);
       
+      // Exercício 9
       let h3Div1 = document.createElement('h3');
       h3Div1.innerText = "Texto número 1 do exercício 9";
       divMain.appendChild(h3Div1);
@@ -104,6 +115,22 @@
       let h3Div3 = document.createElement('h3');
       h3Div3.innerText = "Texto número 3 do exercício 9";
       divMain.appendChild(h3Div3);
+
+      // Parte 2
+
+      // Exercício 1
+      titulo.className = "titulo";
+
+      // Exercício 2
+
+      // Exercício 3
+
+      // Exercício 4
+
+      // Exercício 5
+
+      // Exercício 6
+
 
     </script>
   </body>
