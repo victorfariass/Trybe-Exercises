@@ -86,6 +86,15 @@
       image.src = "https://picsum.photos/200";
       image.className = "small-image";
       divLeft.appendChild(image);
+
+      let lista = document.createElement('ul');
+      for (let i = 1; i <= 10; i += 1) {
+        let listaNum = document.createElement('li');
+        listaNum.innerText = i;
+        lista.appendChild(listaNum)
+      }
+      divRight.appendChild(lista);
+      
     </script>
   </body>
 </html>
