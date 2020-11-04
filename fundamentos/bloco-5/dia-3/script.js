@@ -22,12 +22,16 @@ for (index = 0; index < dezDaysList.length; index += 1) {
   let day = dezDaysList[index];
 
   let dayItem = document.createElement('li');
-  if (day === 24 || day === 25 || day === 31) {
+  if (day === 24 || day === 31) {
     dayItem.className = "day holiday";
     dayItem.innerHTML = day;
     getDezDays.appendChild(dayItem);
-  } else if (day === 4 || day === 11 || day === 18 || day === 25) {
+  } else if (day === 4 || day === 11 || day === 18) {
     dayItem.className = "day friday";
+    dayItem.innerHTML = day;
+    getDezDays.appendChild(dayItem);
+  } else if(day === 25) {
+    dayItem.className = "day holiday friday"
     dayItem.innerHTML = day;
     getDezDays.appendChild(dayItem);
   } else {
@@ -37,3 +41,11 @@ for (index = 0; index < dezDaysList.length; index += 1) {
   }
 }
 
+function createButton(buttonName) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let buttonHoliday = document.createElement('button');
+  buttonHoliday.id = "btn-holiday";
+  buttonHoliday.innerHTML = buttonName;
+  buttonContainer.appendChild(buttonHoliday);
+}
+createButton("Feriados")
