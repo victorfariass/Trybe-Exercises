@@ -48,4 +48,22 @@ function createButton(buttonName) {
   buttonHoliday.innerHTML = buttonName;
   buttonContainer.appendChild(buttonHoliday);
 }
-createButton("Feriados")
+createButton("Feriados");
+
+function colorHoliday() {
+  let buttonHoliday = document.querySelector('#btn-holiday');
+  let holidays = document.querySelectorAll('.holiday');
+  let originalColor = 'rgb(238,238,238)';
+  let newColor = 'blue';
+
+  buttonHoliday.addEventListener('click', function() {
+    for (let i = 0; i < holidays.length; i += 1) {
+      if (holidays[i].style.backgroundColor === newColor) {
+        holidays[i].style.backgroundColor = originalColor;
+      } else {
+        holidays[i].style.backgroundColor = newColor;
+      }
+    }
+  })
+};
+colorHoliday();
