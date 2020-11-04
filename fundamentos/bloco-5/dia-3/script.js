@@ -82,3 +82,22 @@ function createButtonFriday(buttonName) {
 createButtonFriday("Sexta-feira");
 
 // Exercício 5
+function textFriday(sextas) {
+  let buttonFriday = document.querySelector('#btn-friday');
+  let fridays = document.querySelectorAll('.friday');
+  let newText = "SEXTOU!!!";
+
+  buttonFriday.addEventListener('click', function() {
+    for (let i = 0; i < fridays.length; i += 1) {
+      if (fridays[i].innerHTML !== newText) {
+        fridays[i].innerHTML = newText;
+      } else {
+        fridays[i].innerHTML = sextas[i];
+      }
+    }
+  })
+};
+let dezFridays = [4, 11, 18, 25];
+textFriday(dezFridays);
+
+// Exercício 6
