@@ -119,3 +119,12 @@ aumentaZoom()
 diminuiZoom()
 
 // Exercício 7
+function adicionaTarefa(string) {
+  let myTasks = document.querySelector('.my-tasks');
+  let tasksItem = document.createElement('span');
+  tasksItem.innerHTML = string;
+  myTasks.appendChild(tasksItem);
+}
+adicionaTarefa('Estudar');
+
+// Exercício 8
