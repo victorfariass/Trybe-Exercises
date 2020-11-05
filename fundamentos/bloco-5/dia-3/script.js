@@ -101,3 +101,21 @@ let dezFridays = [4, 11, 18, 25];
 textFriday(dezFridays);
 
 // Exercício 6
+function aumentaZoom() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = "40px";
+    event.target.style.fontWeight = "500";
+  })
+}
+function diminuiZoom() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "200";
+  })
+}
+aumentaZoom()
+diminuiZoom()
+
+// Exercício 7
