@@ -128,3 +128,13 @@ function adicionaTarefa(string) {
 adicionaTarefa('Estudar');
 
 // Exercício 8
+function backgroundColor(color) {
+  let taskContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('div');
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+  taskContainer.appendChild(newTask);
+}
+backgroundColor('red')
+
+// Exercício 9
