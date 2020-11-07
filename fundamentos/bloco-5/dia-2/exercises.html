@@ -98,33 +98,27 @@
 
       // Exercício 8
       let lista = document.createElement('ul');
-      for (let i = 1; i <= 10; i += 1) {
+      let num = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let i = 0; i < num.length; i += 1) {
         let listaNum = document.createElement('li');
-        listaNum.innerText = i;
+        listaNum.innerText = num[i];
         lista.appendChild(listaNum)
       }
       divRight.appendChild(lista);
       
       // Exercício 9
-      let h3Div1 = document.createElement('h3');
-      h3Div1.innerText = "Texto número 1 do exercício 9";
-      divMain.appendChild(h3Div1);
-      let h3Div2 = document.createElement('h3');
-      h3Div2.innerText = "Texto número 2 do exercício 9";
-      divMain.appendChild(h3Div2);
-      let h3Div3 = document.createElement('h3');
-      h3Div3.innerText = "Texto número 3 do exercício 9";
-      divMain.appendChild(h3Div3);
+
+      for (let i = 1; i <= 3; i += 1) {
+        let subtitulo = document.createElement('h3');
+        divMain.appendChild(subtitulo);
+        subtitulo.className = "description";
+        subtitulo.innerText = "Texto do subtitulo " + i;
+      }
 
       // Parte 2
 
       // Exercício 1
       titulo.className = "title";
-
-      // Exercício 2
-      h3Div1.className = "description";
-      h3Div2.className = "description";
-      h3Div3.className = "description";
 
       // Exercício 3
       divMain.removeChild(divLeft);
