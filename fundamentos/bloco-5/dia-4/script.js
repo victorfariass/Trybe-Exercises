@@ -15,7 +15,7 @@ window.onload = function() {
 
   // Font Color
   function mudaFontColor(color) {
-    let paragraphs = document.querySelectorAll('.paragraph')
+    let paragraphs = document.querySelectorAll('.paragraph');
     for (let i = 0; i < paragraphs.length; i += 1) {
       paragraphs[i].style.color = color;
     }
@@ -26,6 +26,22 @@ window.onload = function() {
   for (let i = 0; i < fontColorButtons.length; i += 1) {
     fontColorButtons[i].addEventListener('click', function(event){
       mudaFontColor(event.target.innerHTML);
+    })
+  }
+
+  // Font Size
+  function mudaFontSize(size) {
+    let paragraphs = document.querySelectorAll('.paragraph')
+    for (let i = 0; i < paragraphs.length; i += 1) {
+      paragraphs[i].style.fontSize = size;
+    }
+    localStorage.setItem('fontSize', size);
+  }
+
+  let fontSizeButtons = document.querySelectorAll('#font-size>button');
+  for (let i = 0; i < fontSizeButtons.length; i += 1) {
+    fontSizeButtons[i].addEventListener('click', function(event) {
+      mudaFontSize(event.target.innerHTML);
     })
   }
 
