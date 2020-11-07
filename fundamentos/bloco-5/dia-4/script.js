@@ -46,7 +46,7 @@ window.onload = function() {
   }
 
   // Line Hight
-  function mudaLineHight(height) {
+  function mudaLineHeight(height) {
     let paragraphs = document.querySelectorAll('.paragraph');
     for (let i = 0; i < paragraphs.length; i += 1) {
       paragraphs[i].style.lineHeight = height;
@@ -57,7 +57,7 @@ window.onload = function() {
   let lineHeightButtons = document.querySelectorAll('#line-height>button');
   for (let i = 0; i < lineHeightButtons.length; i += 1) {
     lineHeightButtons[i].addEventListener('click', function(event) {
-      mudaLineHight(event.target.innerHTML);
+      mudaLineHeight(event.target.innerHTML);
     })
   }
 
@@ -76,4 +76,24 @@ window.onload = function() {
       mudaFontFamily(event.target.innerHTML);
     })
   }
+
+  // Local Storage
+  function initialize() {
+    let backgroundColor = localStorage.getItem("backgroundColor")
+    if (backgroundColor) mudaBackgroundColor(backgroundColor)
+
+    let fontColor = localStorage.getItem("fontColor")
+    if (fontColor) mudaFontColor(fontColor)
+
+    let fontSize = localStorage.getItem("fontSize")
+    if (fontSize) mudaFontSize(fontSize)
+
+    let lineHeight = localStorage.getItem("lineHeight")
+    if (lineHeight) mudaLineHeight(lineHeight)
+
+    let fontFamily = localStorage.getItem("fontFamily")
+    if (fontFamily) mudaFontSize(fontFamily)
+  }
+  initialize()
+
 }
