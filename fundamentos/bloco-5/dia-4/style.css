@@ -1,0 +1,36 @@
+body {
+  margin: 40px 80px;
+}
+
+.preferences {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.paragraph {
+  display: flex;
+}

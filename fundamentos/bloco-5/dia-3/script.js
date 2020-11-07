@@ -128,46 +128,4 @@ function adicionaTarefa(string) {
 adicionaTarefa('Estudar');
 
 // Exercício 8
-function backgroundColor(color) {
-  let taskContainer = document.querySelector('.my-tasks');
-  let newTask = document.createElement('div');
-  newTask.className = 'task';
-  newTask.style.backgroundColor = color;
-  taskContainer.appendChild(newTask);
-}
-backgroundColor('red')
 
-// Exercício 9
-function taskClass() {
-  let selectedTask = document.getElementsByClassName('task selected');
-  let myTasks = document.querySelector('.task');
-
-  myTasks.addEventListener('click', function(event) {
-    if (selectedTask.length === 0) {
-      event.target.className = 'task selected';
-    } else {
-      event.target.className = 'task';
-    }
-  });
-};
-taskClass();
-
-// Exercício 10
-function colorDay() {
-  let selectedTask = document.getElementsByClassName('task selected');
-  let days = document.querySelector('#days');
-  let taskDiv = document.querySelector('.task');
-  let taskColor = taskDiv.style.backgroundColor;
-  
-  days.addEventListener('click', function(event){
-    let eventTargetColor = event.target.style.color;
-    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
-      let color = selectedTask[0].style.backgroundColor;
-      event.target.style.color = color;
-    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
-      event.target.style.color = 'rgb(119,119,119)';
-    }
-  });
-};
-
-colorDay();
