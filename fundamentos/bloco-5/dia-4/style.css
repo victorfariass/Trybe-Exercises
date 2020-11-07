@@ -1,0 +1,37 @@
+body {
+  margin: 40px 80px;
+}
+
+.preferences {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.paragraph {
+  margin: 0 20px;
+  display: flex;
+}
