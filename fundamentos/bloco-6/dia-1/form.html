@@ -6,7 +6,7 @@
   <title>Currículo</title>
 </head>
 <body>
-  <form action="" enctype="multipart/form-data">
+  <form action="" enctype="multipart/form-data" id="forms">
     <fieldset>
       <label for="">Nome: <input type="text" name="nome" placeholder="Digite seu nome" maxlength="40" required></label>
       <label for="">Email: <input type="text" name="email" placeholder="email@example.com" maxlength="50" required></label>
@@ -28,6 +28,10 @@
       <label for="">Data de Início: <input type="date" name="data" id="data" required></label>
     </fieldset>
   </form>
+  <label for=""><button type="submit" id="montar-curriculo">Montar Currículo</button></label>
+  <div id="curriculo-finalizado">
+
+  </div>
   <script src="/fundamentos/bloco-6/dia-1/script.js"></script>
 </body>
 </html>

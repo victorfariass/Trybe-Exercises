@@ -6,4 +6,13 @@ function adcionaEstados(estados) {
     container.appendChild(estadoItem);
   }
 }
-adcionaEstados(['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins'])
+adcionaEstados(['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins']);
+
+function montaCurriculo() {
+  let botao = document.getElementById('montar-curriculo');
+  let curriculoFinalizado = document.getElementById('curriculo-finalizado');
+  botao.addEventListener('click', function () {
+    let forms = document.getElementById('forms');
+    curriculoFinalizado.innerText = forms.innerText;
+  })
+}
