@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+  <link rel="stylesheet" href="/fundamentos/bloco-6/dia-2/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <script src="/fundamentos/bloco-6/dia-2/jquery-3.5.1.min.js"></script>
+  <script src="/fundamentos/bloco-6/dia-2/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h1 class="dispĺay-4 text-muted">Currículo</h1>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <fieldset>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input class="form-control" type="text" id="name" name="nome" placeholder="Digite seu nome" maxlength="40" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="email@example.com" maxlength="50" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="00000000000" maxlength="11" required>
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" maxlength="200" required>
+      </div>
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Sua cidade" maxlength="28" required>
+      </div>
+      <div class="form-group">
+        <label for="container">Selecione seu Estado:</label>
+          <select class="form-control" name="container" id="container" required>
+          </select>
+      </div>
+      <div class="form-group">
+        <p>Tipo:</p>
+        <label for="casa">Casa</label>
+        <input class="form-control" type="radio" name="tipo" id="casa" value="casa" required>
+        <label for="apt">Apartamento</label>
+        <input class="form-control" type="radio" name="tipo" id="apt" value="apt" required>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="form-group">
+        <p>Último Emprego</p>
+        <label for="resumo">Resumo do Currículo:</label><br>
+        <textarea class="form-control" name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="cargo">Cargo:</label>
+        <input class="form-control" type="text" id="cargo" name="cargo" maxlength="40" required>
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descrição do Cargo:</label>
+        <input class="form-control" type="text" id="descricao" name="descricao" maxlength="500" required>
+      </div>
+      <div class="form-group">
+        <label for="data">Data de Início:</label>
+        <input class="form-control" type="date" name="data" id="data" required>
+      </div>
+    </fieldset>
+  </form>
+  <div>
+    <label for=""></label>
+    <button class="btn btn-success" type="submit" id="montar-curriculo">Montar Currículo</button>
+  </div>
+  
+  <div id="curriculo-finalizado">
+
+  </div>
+  <script src="/fundamentos/bloco-6/dia-1/script.js"></script>
+</body>
+</html>
