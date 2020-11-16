@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+</head>
+<body>
+  <form action="" enctype="multipart/form-data" id="forms">
+    <fieldset>
+      <label for="">Nome: <input type="text" name="nome" placeholder="Digite seu nome" maxlength="40" required></label>
+      <label for="">Email: <input type="text" name="email" placeholder="email@example.com" maxlength="50" required></label>
+      <label for="">CPF: <input type="text" name="cpf" placeholder="00000000000" maxlength="11" required></label><br>
+      <label for="">Endereço: <input type="text" name="endereco" placeholder="Digite seu endereço" maxlength="200" required></label>
+      <label for="">Cidade: <input type="text" name="cidade" placeholder="Sua cidade" maxlength="28" required></label>
+      <label for="">Selecione seu Estado:
+        <select name="container" id="container" required>
+        </select>
+      </label>
+      <label for="casa">Tipo: <input type="radio" name="tipo" id="casa" value="casa" required>Casa</label>
+      <label for="apt"><input type="radio" name="tipo" id="apt" value="apt" required>Apartamento</label>
+    </fieldset>
+    <fieldset>
+      <p>Último Emprego</p>
+      <label for="">Resumo do Currículo: <br><textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea></label><br>
+      <label for="">Cargo: <input type="text" name="cargo" maxlength="40" required></label><br>
+      <label for="">Descrição do Cargo: <input type="text" name="descricao" maxlength="500" required></label><br>
+      <label for="">Data de Início: <input type="date" name="data" id="data" required></label>
+    </fieldset>
+  </form>
+  <label for=""><button type="submit" id="montar-curriculo">Montar Currículo</button></label>
+  <div id="curriculo-finalizado">
+
+  </div>
+  <script src="/fundamentos/bloco-6/dia-1/script.js"></script>
+</body>
+</html>
