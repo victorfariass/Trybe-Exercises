@@ -24,6 +24,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  list-style: none;
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 15px;
@@ -60,4 +61,32 @@ footer h3 {
 footer p {
   margin: 15px;
   font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: rgb(245, 245, 148);
+    margin: 20px
+  }
+  nav ul {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 15px 15px;
+  }
+  nav li {
+    padding: 10px;
+  }
+  .aside-one ul, .aside-two ul {
+    text-align: center;
+    list-style: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(139, 212, 139);
+  }
+  
 }
