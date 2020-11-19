@@ -106,3 +106,24 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  #aside {
+    display: none;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    width: 50vw;
+  }
+  #content {
+    text-align: center;
+  }
+  #navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
